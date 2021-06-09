@@ -25,7 +25,7 @@ class StoreNoteRequest extends FormRequest
     {
         return [
             'title' => 'required|string|max:255',
-            'body' => 'max:1000',
+            'body' => 'string|max:1000',
             'completed' => 'boolean'
         ];
     }

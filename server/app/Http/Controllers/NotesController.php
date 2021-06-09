@@ -22,7 +22,7 @@ class NotesController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\StoreNoteRequest $request
+     * @param  \Illuminate\Http\Requests\StoreNoteRequest $request
      * @return \Illuminate\Http\Response
      */
     public function store(StoreNoteRequest $request)
@@ -52,7 +52,7 @@ class NotesController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\StoreNoteRequest  $request
+     * @param  \Illuminate\Http\Requests\StoreNoteRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
