@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    color : #373f49;
+}
+
+.App {
+    position: relative;
+    max-width: 400px;
+    min-height: 500px;
+}
+
+.app-container {
+    margin: 0px 7px;
+}
+
+a {
+    text-decoration: none !important;
+    color: #373f49 !important;
+}
+
+.input-invalid{
+    border-color: #FF0000 !important;
+}
+
+.text-success {
+    color: #2E8B57 !important;
+}
+
+.text-danger {
+    color: #DC143C !important;
+}

@@ -1,0 +1,10 @@
+.sumNotes {
+    position: absolute;
+    bottom: 0px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 30px;
+    width:100%;
+}
+    

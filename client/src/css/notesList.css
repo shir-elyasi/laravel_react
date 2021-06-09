@@ -1,0 +1,70 @@
+i:hover {
+    background-color: #dcdcdc;
+    border-radius: 50%;
+}
+
+th {
+    border-style: none !important;
+}
+
+.btn {
+    padding: 0px 5px !important;
+}
+
+.btn:hover {
+    background-color: #e6e6e6;
+}
+
+.icon-table {
+    color: black;
+}
+
+.icon-table:hover {
+    background-color: #e6e6e6;
+}
+
+.scroll_table{
+    width: 400px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.scroll_table tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 310px;
+}
+
+.scroll_table thead tr {
+   display: block;
+}
+
+.scroll_table th, .scroll_table td {
+  padding: 5px;
+  text-align: left;
+  width: 200px;
+}
+
+thead tr th:nth-child(2),
+tbody tr td:nth-child(2) {
+    width: 60%; 
+    min-width: 60%;
+    max-width: 60%;
+    word-break: break-all;
+}
+
+thead tr{
+    border-bottom: 1px solid black;
+}
+
+.completed {
+    color: green;
+}
+
+.no-notes {
+    display: flex;
+    padding: 100px 0px;
+    justify-content: center;
+    align-items: center;
+}
