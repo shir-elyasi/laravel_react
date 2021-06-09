@@ -38,9 +38,9 @@ export default function NotesList() {
                                 </td>
                                 <td>
                                     {element.completed ?
-                                        <button title="Mark as undone" className="btn" onClick={() => changeCompleted(element.id)}><i className="fas fa-check icon-table text-danger"></i></button>
+                                        <button title="Mark as undone" className="btn" onClick={() => changeCompleted(element.id)}><i className="fas fa-check icon-table text-success"></i></button>
                                     :
-                                        <button title="Mark as done" className="btn" onClick={() => changeCompleted(element.id)}><i className="fas fa-check icon-table text-success"></i></button>
+                                        <button title="Mark as done" className="btn" onClick={() => changeCompleted(element.id)}><i className="fas fa-check icon-table text-danger"></i></button>
                                     }
                                 </td>
                                 <td>
