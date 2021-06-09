@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useReducer} from 'react';
+import React, { useContext, useEffect, useReducer, useState} from 'react';
 import axios from 'axios';
 import { initialState, notesReducer } from '../reducers/notes.reducer';
 import * as actionTypes from '../reducers/notes.actions';
@@ -13,12 +13,14 @@ export function useNotes() {
 export function NotesProvider({children}) {
 
     const [notesState, notesDispatch] = useReducer(notesReducer, initialState);
+    const [loading, setLoading] = useState(false);
 
 
     useEffect(() => {
         async function fetchData(){
-            const res = await axios.get(`${process.env.REACT_APP_SERVER_PORT}/api/notes`)
-            notesDispatch({type: actionTypes.FETCH_DATA, payload: res.data}) 
+            const res = await axios.get(`${process.env.REACT_APP_SERVER_PORT}/api/notes`);
+            notesDispatch({type: actionTypes.FETCH_DATA, payload: res.data});
+            setLoading(true);
         }
         fetchData();
     }, []);
@@ -82,6 +84,7 @@ export function NotesProvider({children}) {
 
     const value = {
         notesState,
+        loading,
         notesDispatch,
         addNote,
         deleteNote,
